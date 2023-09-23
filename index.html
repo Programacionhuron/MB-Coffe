@@ -1,90 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>MB Coffe | Home</title>
-<style>
-  body {
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>MB Coffe</title>
+    <style>
+        body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f5f5f5;
-  }
-
-  header {
-    background-color: #006241;
-    color: #fff;
+    background-color: #f7e9d5;
+}
+.border{
+text-decoration: overline;
+}
+.aligned{
+    text-align: left;
+}
+header {
     text-align: center;
-    padding: 10px 0;
-  }
+    background-color: #2b2b2b;
+    color: #f7e9d5;
+    padding: 20px 0;
+}
 
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #2b2b2b;
+    font-weight: bold;
+}
+
+main {
     padding: 20px;
-  }
+}
 
-  .menu-item {
-    display: flex;
-    margin-bottom: 20px;
-  }
+/* Estilos específicos para secciones */
+.section1, .section2 {
+    background-color: #f7e9d5;
+    padding: 20px;
+    margin: 20px 0;
+    text-align: center;
+}
 
-  .menu-item img {
-    width: 100px;
-    height: 100px;
-    margin-right: 10px;
-  }
-
-  .menu-item-details {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  footer {
-    background-color: #333;
-    color: #fff;
+/* Estilos para el pie de página */
+footer {
+    background-color: #2b2b2b;
+    color: #f7e9d5;
     text-align: center;
     padding: 10px 0;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-  }
-</style>
+}
+    </style>
 </head>
 <body>
-  <header>
-    <h1>Welcome to MB Coffe</h1>
-    <p>Your favorite coffee shop experience.</p>
-  </header>
+    <header>
+        <h1 class="border">MB Coffe</h1>
+        <p>El poder de la cafeína</p>
+    </header>
 
-  <div class="container">
-    <div class="menu-item">
-      <img src="coffee1.jpg" alt="Coffee 1">
-      <div class="menu-item-details">
-        <h2>Classic Brew</h2>
-        <p>A rich, medium-roast coffee to start your day.</p>
-        <p>Price: $3.99</p>
-      </div>
-    </div>
+    <nav>
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </nav>
 
-    <div class="menu-item">
-      <img src="coffee2.jpg" alt="Coffee 2">
-      <div class="menu-item-details">
-        <h2>Caramel Macchiato</h2>
-        <p>Espresso with vanilla-flavored syrup and steamed milk, topped with a caramel drizzle.</p>
-        <p>Price: $4.49</p>
-      </div>
-    </div>
+    <main>
+        <section class="section1">
+            <h2>Bienvenido a MB Coffe</h2>
+            <p>Sumérgete en la nostalgia con nuestro café retro. Ofrecemos una amplia variedad de bebidas y deliciosos postres que te transportarán a tiempos pasados.</p>
+        </section>
 
-    <!-- Agrega más elementos de menú aquí -->
+        <section class="section2">
+            <h2>Menú</h2>
+            <ul>
+                <li  class="aligned">Café Espresso</li>
+                <li  class="aligned">Café con Leche</li>
+                <li  class="aligned">Capuchino</li>
+            </ul>
+        </section>
+    </main>
 
-  </div>
-
-  <footer>
-    <p>&copy; 2023 Starbucks Café. All rights reserved.</p>
-  </footer>
+    <footer>
+        <p>&copy; 2023 Café Retro</p>
+    </footer>
 </body>
 </html>
